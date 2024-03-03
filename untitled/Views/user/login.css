@@ -1,0 +1,188 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html {
+    height: 100%;
+}
+body {
+    color: black;
+    font-size: 62.5%;
+    font-family: "Open Sans", sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    background: white;
+    text-decoration-color: black;
+}
+.format {
+    text-align: center;
+    height: 500px;
+    width : 100%;
+}
+.title {
+    font-size: x-large;
+    font-weight: bold;
+    margin-top: 5%;
+    min-height: 40px;
+}
+.slogan {
+    font-size: large;
+    min-height: 35px;
+}
+.BoxName {
+    height: 40px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    font-size: medium;
+}
+.box {
+    width: 250px;
+    height: 30px;
+    text-align: center;
+    box-sizing: border-box;
+    border-style: groove;
+    padding: 0%;
+}
+.box:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 5px 10px 2px #dddddd;
+}
+.submit {
+    height: 50px;
+    flex-wrap: nowrap;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.submit_button{
+    height: 30px;
+    width: 60px;
+}
+.message {
+    width: 250px;
+    height: 20px;
+    font-size: small;
+    color: red;
+}
+.elements {
+    height: 90px;
+}
+.elements.invalid.box {
+    border-color: red;
+}
+.footer {
+    display: flex;
+    height: 150px;
+    background-color: #339999;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+.get_help {
+    width: 100px;
+}
+.about_store {
+    width: 100px;
+}
+.footer .link {
+    display: flex;
+    width: 1000px;
+    align-items: center;
+    justify-content: center;
+}
+.about_store .title {
+    font-size: small;
+}
+.footer .get_help .title {
+    font-size: small;
+}
+.footer .icon {
+    width: 500px;
+    height: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .icon .item {
+    width: 50px;
+}
+.fa-facebook-square:before {
+    content: "\f082";
+    font: var(--fa-font-brands);
+    font-size: x-large;
+}
+.fa-instagram-square:before {
+    content: "\e055";
+    font: var(--fa-font-brands);
+    font-size: x-large;
+}
+.fa-twitter-square:before {
+    content: "\f081";
+    font: var(--fa-font-brands);
+    font-size: x-large;
+}
+.fa-mail-bulk::before {
+    content: "\f674";
+    font: var(--fa-font-solid);
+    font-size: x-large;
+}
+.header {
+    height: 70px;
+    width: 100%;
+    top: 0px;
+    display: flex;
+}
+.search_box {
+    height: 60px;
+    width: 200px;
+    padding-top: 30px;
+}
+.search_box .search {
+    height: 100%;
+    width: 160px;
+}
+.search_box .icon {
+    background-color: aliceblue;
+    width: 30px;
+    height: 30px;
+}
+.logo .shop_icon {
+    height: 100%;
+    width: 70px;
+}
+.header .link {
+    height: 100%;
+    width: 1000px;
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 30px;
+    padding-right: 100px;
+}
+.header .link .item {
+    height: 100%;
+    width: 100px;
+    font-size: medium;
+    text-decoration: none;
+    color: black;
+    font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.header .cart {
+    height: 40px;
+    width: 40px;
+    margin: 20px;
+}
+.fa-cart-shopping::before {
+    content: "\f07a";
+    font: var(--fa-font-solid);
+    font-size: medium;
+}
+.cart-icon {
+    height: 35px !important;
+    width: 35px !important;
+}

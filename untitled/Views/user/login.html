@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="login.css">
+    <body>
+        <!--header-->
+        <header class="header">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.css">
+            <div class="logo"><img src="../../image/shop_icon.png" class = "shop_icon"></div>
+            <div class="link">
+                <a href="" class="item">Dress</a>
+                <a href="" class="item">Shirts</a>
+                <a href="" class="item">Coats</a>
+                <a href="" class="item">Jeans</a>
+            </div>
+        </header>
+        <!--form_login-->
+        <div id = 'form_1'class = "format " >
+            <p class = "title"> Sign in  </p>
+            <p class = "slogan"> Your account for everything in  </p>
+            <form action = ../../Controllers/user/loginController.php >
+                <div class = "elements">
+                    <lable for = "username" class = "BoxName">Username</lable>
+                    <input type="text" id="username" name="username"><br>
+                    <span class = "message"></span>
+                </div>
+                <div class = "elements">
+                    <lable for = "password" class= "BoxName">Password</lable>
+                    <input type="text" id="password" name="password" ><br><br>
+                    <span class = "message"></span>
+                </div>
+                <div class="submit">
+                    <button class="submit_button">Sign in </button>
+                </div>
+            </form>
+        </div>
+        <!--footer-->
+        <footer class = 'footer'>
+            <div class = 'link'>
+                <div class = 'about_store'><p class="title"> About The Store <br></p> News <br> Career <br> Investors <br> </div>
+                <div class = 'get_help'><p class="title"> Help <br></p> Order Status <br> Delivery <br> Payment Options</div>
+            </div>
+            <div class="icon">
+                <i class="fa-facebook-square item"></i>
+                <i class="fa-instagram-square item"></i>
+                <i class="fa-twitter-square item"></i>
+                <i class="fa-mail-bulk item"></i>
+            </div>
+        </footer>
+        <script src="./dom.js" > </script>
+        <script>
+            Validator({
+                form : '#form_1',
+                rules : [
+                    Validator.isRequired('#Name'),
+                    Validator.isEmail('#Email'),
+                    Validator.isRequired('#Pass_word')
+                ]
+            });
+        </script>
+    </body>
+</html>
+
+
+
